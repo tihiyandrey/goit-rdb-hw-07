@@ -29,7 +29,6 @@ WHERE date BETWEEN '1996-07-10 00:00:00' AND '1996-10-08 00:00:00';
 SELECT
 id,
 date,
-JSON_OBJECT('id'
-, id,
+JSON_OBJECT('id', id, 'date', date) AS json_object
 FROM
 orders;
